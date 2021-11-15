@@ -1,10 +1,6 @@
 function setup() {
+  
   createCanvas(800, 600);
-}
-
-function keyPressed() {
-  if (keyCode === 32)
- window.open("https://editor.p5js.org/dsabic1/full/JAS2cvpkd4")
 }
 
 function draw() {
@@ -16,19 +12,24 @@ function draw() {
   rect(10, 10, 780, 580, 40); //left rectangle
   fill(255, 255, 255);
   //white
-  rect(40, 100, 720, 460, 35); //bottom right rectangle
+  rect(190, 90, 580, 480, 35); //bottom right rectangle
   fill(237, 125, 49);
   //orange stuff
-  rect(40, 25, 720, 60, 20);
-  textSize(32);
-  fill(255);
-  text("Welcome to the Stroke Rehab Game!", 140, 64);
-  textSize(60);
-  noStroke();
-  fill(68, 114, 196)
-  text("Press the spacebar", 140, 280)
-  text("to Start!", 310, 350)
- 
+  rect(190, 30, 580, 45, 25);
+  rect(30, 30, 140, 540, 30);
+  rect(655, 565, 140, 30, 45);
+  fill(255, 255, 255);
+  textSize(36);
+  text("Typing Match Game", 320, 65);
+  textSize(18);
+  text("Instructions:", 35, 80);
+  textSize(16);
+  text("Press '0' for Home", 660, 585)
 }
 
+function keyPressed() {
+  if (keyCode === 48)
+ window.open("https://editor.p5js.org/dsabic1/full/JAS2cvpkd4")
+}
 
+ 
